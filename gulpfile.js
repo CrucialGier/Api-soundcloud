@@ -59,13 +59,14 @@ gulp.task('bowerJS', function () {
     .pipe(gulp.dest('./build/js'));
 });
 
-gulp.task('bower', ['bowerJS', 'bowerCSS']);
-
 gulp.task('bowerCSS', function () {
   return gulp.src(lib.ext('css').files)
-    .pipe(concat('vendor.css'))
-    .pipe(gulp.dest('./build/css'));
+  .pipe(concat('vendor.css'))
+  .pipe(gulp.dest('./build/css'));
 });
+
+gulp.task('bower', ['bowerJS', 'bowerCSS']);
+
 
 
 gulp.task("clean", function(){
@@ -108,6 +109,6 @@ gulp.task('cssBuild', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
 });

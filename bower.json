@@ -1,9 +1,9 @@
 {
-  "name": "ping-pong",
+  "name": "soundcloud2",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/CrucialGier/NodeGulp-Calculator",
+  "homepage": "https://github.com/CrucialGier/",
   "ignore": [
     "**/.*",
     "node_modules",
