@@ -11,20 +11,24 @@
   </head>
   <body>
     <h1>SoundCloud API usage &mdash; JavaScript SDK</h1>
-    <a href="/login" id="userConnect"><img src="img/sc_button.png" alt="Soundcloud Connect Button" /></a>
+    <a href="#" id="userConnect"><img src="img/sc_button.png" alt="Soundcloud Connect Button" /></a>
 
     <form id="artist">
       <label for="querySong">enter an artist</label>
       <input id = "querySong">
-      <button id="getList">Get List of Tracks</button>
-      <ul>
+      <button id="embedTrack">Get tracks by artist</button>
+      <ul id="artist">
 
       </ul>
-      <button id="embedTrack">Embed Track</button>
-    </form>
+      <a href="#" id="start">Start</a>
+      <a href="#" id="stop">Stop</a>
+      <a href="" id="skip">Skip dat track</a>
       <div id="player">
       </div>
-    <a href="#" id="start">Start</a>
-    <a href="#" id="stop">Stop</a>
+      <button id="getList">Get List of Rando Tracks</button>
+      <ul id="random">
+
+      </ul>
+    </form>
   </body>
 </html>
