@@ -2,8 +2,19 @@
 
 $(document).ready(function() {
   SC.initialize({
-    client_id: '7cf07043235f0e04f0a9bc58300b6c07'
+    client_id: '7cf07043235f0e04f0a9bc58300b6c07',
+    redirect_uri: 'login-dummie.html'
   });
+  $('#userConnect').click(function(event){
+    event.preventDefault();
+    debugger;
+    SC.connect(function () {
+      SC.get("/me", function (response) {
+        console.log("Welcome" + response.username);
+      });
+    });
+  });
+
   $("#embedTrack").click(function(event) {
      event.preventDefault();
     var artist = $("#querySong").val();
